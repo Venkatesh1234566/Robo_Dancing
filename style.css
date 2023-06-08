@@ -1,0 +1,213 @@
+.robot{
+    width: 1000px;
+    height:500px;
+    border: 2px solid brown;
+    margin: auto;
+    margin-top: 4%;
+    
+}
+.face{
+    width: 190px;
+    height: 150px;
+    background: rgb(237, 184, 11);
+    border-radius: 150px 150px 0 0;
+    margin:auto;
+    margin-top: 1%;
+}
+.robot:hover .face{
+    transform: translate(100px);
+    animation: hard 1s infinite;
+}
+@keyframes hard{
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translate(80px)
+    }
+    50%{
+        transform: translate(0px);
+    }
+    100%
+    {
+        transform: translate(-80px);
+    }
+}
+.eye{
+    width:200px;
+    height:200px;
+    display: flex;
+    margin: auto;
+    margin-top: 9%;
+    margin-left: -0.8;
+    justify-content: space-evenly;
+ position: absolute;
+}
+
+.eye1{
+    width:20px;
+    height: 20px;
+    background:black;
+    border-radius:50%;
+}
+.eye2{
+    width:20px;
+    height: 20px;
+    background:black;
+    border-radius:50%;
+}
+.body{
+    width:310px;
+    height:150px;
+    margin: auto;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hand1{
+    width:40px;
+    height:140px ;
+    background: rgb(11, 237, 169);
+    margin-top: 6%;
+    border-radius: 150px 150px 150px 150px;
+    transition: transform 1s linear;
+}
+.robot:hover .hand1{
+    transform: rotate(180deg);
+    transform-origin: top center;
+    animation: hand11 1s infinite;
+}
+@keyframes hand11{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(70deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(-70deg);
+    }
+}
+.st{
+    width:190px;
+    height:200px;
+    background: rgb(194, 241, 7);
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+.robot:hover .st{
+    transform: translate(100px);
+    animation: mid 1s infinite;
+}
+@keyframes mid{
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translate(80px)
+    }
+    50%{
+        transform: translate(0px);
+    }
+    100%
+    {
+        transform: translate(-80px);
+    }
+}
+
+.hand2
+{
+    width:40px;
+    height:140px ;
+    background: rgb(11, 237, 169);
+    margin-top: 6%;
+    border-radius: 150px 150px 150px 150px;
+}
+.robot:hover .hand2{
+    transform: rotate(180deg);
+    transform-origin: top center;
+    animation: hand22 1s infinite;
+}
+@keyframes hand22{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(70deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(-70deg);
+    }
+}
+.legs{
+    width:200px;
+    height:200px;
+    margin-left: 39.5%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.leg1{
+    width:40px;
+    height:140px;
+    background: rgb(11, 237, 233);
+    border-radius: 150px 150px 150px 150px;
+}
+.leg2{
+    width:40px;
+    height:140px;
+    background: rgb(11, 237, 233);
+    border-radius: 150px 150px 150px 150px;
+}
+.robot:hover .leg2{
+    transform: rotate(90deg);
+    transform-origin: top center;
+    animation: legs2 1s infinite;  
+}
+.robot:hover .leg1{
+    transform: rotate(90deg);
+    transform-origin: top center;
+    animation: legs1 1s infinite;  
+}
+@keyframes legs1{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(30deg);
+    }
+}
+@keyframes legs2{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-30deg);
+    }
+    50%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(30deg);
+    }
+}
